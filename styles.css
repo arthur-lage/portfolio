@@ -86,16 +86,113 @@ header nav ul li a.resume {
   background: transparent;
   border-radius: 8px;
   transition: 0.15s ease;
-  border: 2px solid #25c;
+  border: 2px solid #57febe;
 }
 
 header nav ul li a.resume:hover {
-  background: rgba(34, 85, 204, 0.2);
+  background: #57febe33;
 }
 
 main {
   margin-top: 4rem;
   padding: 0 6rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section .title {
+  margin-bottom: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+main section .subtitle {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  color: #eaeaea;
+  text-align: center;
+  padding: 0 2rem;
+  letter-spacing: .1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+main .contact .social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .contact .social .social-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  width: 30rem;
+  height: 32.5rem;
+  padding: 1.5rem;
+  border: 1px solid #555;
+  transition: 0.15s ease;
+  border-radius: 1rem;
+}
+
+main .contact .social .social-contact span {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  transition: 0.2s ease;
+  gap: 3rem;
+  letter-spacing: 0.35rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+main .contact .social .social-contact:hover {
+  border-color: #57febe;
+  box-shadow: 0px 0px 10px 5px #57febe3c;
+}
+
+main .contact .social .social-contact:hover span {
+  color: #57febe;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+main .contact .social .social-contact a {
+  color: #57febe;
+  border: 3px solid #57febe;
+  transition: 0.15s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: transparent;
+}
+
+main .contact .social .social-contact a:hover {
+  color: #222;
+  background: #57febe;
+  box-shadow: 0px 0px 15px 1.5px #57febe;
+}
+
+main .contact .social .social-contact span i {
+  font-size: 6.4rem;
 }
 
 .divisor {
@@ -107,6 +204,7 @@ main {
 
 footer {
   padding: 0rem 6rem;
+  padding-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

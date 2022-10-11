@@ -58,6 +58,10 @@ header nav .logo {
   font-family: "Roboto Mono", sans-serif;
 }
 
+header nav .logo img {
+  width: 8rem;
+}
+
 header nav ul li a {
   color: #fff;
   font-weight: 600;

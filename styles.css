@@ -6,6 +6,7 @@
 
 :root {
   --background-color: #191919;
+  --background-color-header: #1919191c;
 }
 
 html {
@@ -29,8 +30,9 @@ a {
 header {
   display: flex;
   position: fixed;
-  background: var(--background-color);
+  background: var(--background-color-header);
   z-index: 10;
+  backdrop-filter: blur(4px);
   top: 0;
   width: 100%;
   justify-content: center;
@@ -88,6 +90,16 @@ header nav ul li a:not(.resume)::after {
   background: #57febe;
 }
 
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 header nav ul li a:not(.resume):hover::after {
   transform: scaleX(1);
 }
@@ -116,6 +128,7 @@ main section {
   flex-direction: column;
   align-items: center;
   padding-top: 12rem;
+  z-index: 10;
 }
 
 main section.hero {
@@ -136,6 +149,10 @@ main section.hero .information {
 main section.hero .information .left {
   display: flex;
   flex-direction: column;
+  padding: 3rem;
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
 }
 
 main section.hero .information .left span {
